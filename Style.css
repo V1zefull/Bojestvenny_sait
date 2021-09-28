@@ -1,0 +1,41 @@
+body{
+    margin:0;
+}
+/*----Верхнее меню----*/
+.header{
+    display: block;
+    position:100%;
+    background: linear-gradient(-154deg,#42bc7f,#3d8963);
+}
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.nav{
+    float:right;
+    padding-right: 10px;
+    padding-top: 7px;
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.container li{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 19px;
+}
+a:hover{
+    color: blueviolet;
+}
+/*----Конец----*/
