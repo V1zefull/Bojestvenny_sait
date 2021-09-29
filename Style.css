@@ -1,5 +1,9 @@
 body{
     margin:0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    
 }
 /*----Верхнее меню----*/
 .header{
@@ -16,24 +20,27 @@ body{
 .nav{
     float:right;
     padding-right: 10px;
-    padding-top: 7px;
+    padding-top: 12px;
+
 }
+
 .logo{
     position: relative;
     display: inline-block;
     padding-top:15px;
     padding-bottom:15px;
+    padding-left: 35px;
 }
 
 .container li{
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .nav a{
     color:rgb(212, 212, 212);
     text-decoration: none;
-    font-size: 19px;
+    font-size: 14px;
 }
 a:hover{
     color: rgb(255, 255, 255);
@@ -42,14 +49,62 @@ a:hover{
 
 /*----Welcome----*/
 
-.Welcome img{
+.Welcome{
     position:relative;
-    text-align: center;
     width: 100%;
+}
+.Welcome img{
+    filter: brightness(65%);
 }
 
 .X-man{
     position:absolute;
-    display: block;
+    bottom: 450px;
+    font-size: 47pt;
+    color: white;
+    padding-left: 150px;
+}
+
+.X-man-text{
+    position:absolute;
+    bottom: 430px;
+    padding-left: 150px;
+    color:white;
+    font-size: 11pt;
+}
+
+.View_work{
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-left: 150px;
+    bottom: 380px;
+    background-color: #42bc7f;
+}
+.View_work a{
+    text-decoration: none;
+    color:white;
+
+}
+
+.View_work a :hover{
+    color:rgb(228, 228, 228)
+}
+
+.Contact_me{
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-left: 290px;
+    bottom: 380px;
+    background-color: white;
+}
+.Contact_me a{
+    text-decoration: none;
+    color:black;
 }
 /*----Конец-Welcome----*/
