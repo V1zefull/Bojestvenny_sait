@@ -4,41 +4,38 @@ body{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    max-width: 100%;
     
 }
 /*----Верхнее меню----*/
 .header{
-    display: block;
-    position:100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
     background: linear-gradient(-154deg,#42bc7f,#3d8963);
 }
 
-.container{
-    margin-left: 100px;
-    margin-right: 100px;
-    
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.nav{
-    float:right;
-    padding-right: 10px;
-    padding-top: 12px;
 
+.navigation{
+    display: flex;
+}
+
+.navigation li:not(last-child){
+    list-style-type: none;
+    margin-right: 10px;
 }
 
 .logo{
-    position: relative;
-    display: inline-block;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left: 35px;
-}
-
-.container li{
-    display: inline-block;
-    padding-left: 15px;
+    
 }
 
 .nav a{
+    transition: color 0.3s 0s ease;
     color:rgb(212, 212, 212);
     text-decoration: none;
     font-size: 14px;
@@ -51,62 +48,97 @@ a:hover{
 /*----Welcome----*/
 
 .Welcome{
-    position:relative;
-    width: 100%;
-}
-.Welcome img{
-    filter: brightness(65%);
-}
-
-.X-man{
-    position:absolute;
-    bottom: 450px;
-    font-size: 47pt;
-    color: white;
-    padding-left: 150px;
+    position: relative;
+    background-image: url(Img/slider.jpg);
+    filter: brightness(1);
+    padding: 200px 0 255px 0;
+    background-size: cover;
+    background-position: 50% 45%;
 }
 
-.X-man-text{
-    position:absolute;
-    bottom: 430px;
-    padding-left: 150px;
-    color:white;
-    font-size: 11pt;
-}
-
-.View_work{
+.Welcome::before{
+    background:rgb(57 53 53 / 50%);
+    content: "";
     position: absolute;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    margin-left: 150px;
-    bottom: 380px;
+    top:0px;
+    left:0;
+    width: 100%;
+    height: 712px;
+    z-index: -1;
+}
+._container{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.Welcome_title, .Welcome_text{
+    margin-bottom: 15px;
+    color:#fff;
+}
+
+.Welcome_text{
+    font-size: 15px;
+    width: 690px;
+    line-height: 140%;
+    letter-spacing: 0.1px;
+}
+
+.Welcome_title{
+    font-size: 60px;
+}
+
+.View_btn{
+    transition: all 0.3s 0s ease;
+    display: inline-flex;
+    justify-content: center;   
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    border-radius: 2px;
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
     background-color: #42bc7f;
 }
-.View_work a{
-    text-decoration: none;
-    color:white;
 
-}
-
-.View_work a :hover{
-    color:rgb(228, 228, 228)
-}
-
-.Contact_me{
-    position: absolute;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    margin-left: 290px;
-    bottom: 380px;
+.View_btn:hover{
+    color:black;
     background-color: white;
 }
-.Contact_me a{
+
+.View_btn span{
+    display: block;
+    margin-left: 6px;
+}
+
+.Contact_btn{
+    transition: all 0.3s 0s ease;
+    display: inline-flex;
+    justify-content: center;   
+    align-items: center;
     text-decoration: none;
     color:black;
+    border-radius: 2px;
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.Contact_btn:hover{
+    color:white;
+    background-color:#42bc7f;
+}
+
+.Contact_btn span{
+    display: block;
+    margin-left: 6px;
+}
+
+.Contact_btn i{
+    transform:rotate(90deg);
 }
 
 /*----Конец-Welcome----*/
@@ -145,9 +177,8 @@ a:hover{
     text-decoration: none;
     color:white;
 }
-.pi2 p{
-   
-}
+
+
 .pi2{
     position: absolute;
     color:#42bc7f;
@@ -163,18 +194,8 @@ a:hover{
     font-size:30pt;
     margin-left: 200px;
     margin-top: 180px;
-    
-    
-}
-.video{
-    position:absolute;
-    padding-left: 30px;
-    padding-right: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    margin-left:920px;
 }
 
-.video img{
+.Img_about img{
     object-fit: fill;
-    
 }
