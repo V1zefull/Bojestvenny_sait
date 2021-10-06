@@ -7,6 +7,12 @@ body{
     max-width: 100%;
     
 }
+
+._container{
+    width: 1180px;
+    margin: 0 auto;
+}
+
 /*----Верхнее меню----*/
 .header{
     height: 70px;
@@ -28,10 +34,6 @@ body{
 .navigation li:not(last-child){
     list-style-type: none;
     margin-right: 10px;
-}
-
-.logo{
-    
 }
 
 .nav a{
@@ -65,10 +67,6 @@ a:hover{
     width: 100%;
     height: 712px;
     z-index: -1;
-}
-._container{
-    width: 1180px;
-    margin: 0 auto;
 }
 
 .Welcome_title, .Welcome_text{
@@ -144,58 +142,45 @@ a:hover{
 /*----Конец-Welcome----*/
 
 /*----About-Me----*/
-.Ama{
-    background-color:white;
-   
+.Ame{
+    background-color: red;
+    display: flex;
 }
 
-.text_am{
-    position:absolute;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding-top: 70px;
-    padding-bottom: 130px;
-    font-size: 11pt;
-    
-
-}
-.downloadxd{
-    position: absolute;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    margin-left:400px;
-    margin-top:300px;
-    margin-bottom: 250px;
-    background-color: #42bc7f;
-    
-    
+.Ame_container{
+    display: flex;
 }
 
-.downloadxd a{
+.about_me{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text_btn{
+    margin: 0 0 0 170px;
+}
+.text_ame::first-line{
+    line-height: 100px;
+}
+
+.download_CV a{
     text-decoration: none;
+    text-transform: uppercase;
     color:white;
+    background-color: #42bc7f;
 }
 
+.Img_about{
+    padding: 150px 150px 150px 150px;
+    background-image: url(Img/about.jpg);
+    background-size: cover;
+}
 
-.pi2{
-    position: absolute;
+.fa-play-circle{
+    transition: all 0.3s 0s ease;
+    width: 10px;
+    height: 0px;
+}
+.fa-play-circle:hover{
     color:#42bc7f;
-    font-size:30pt;
-    margin-left: 250px; 
-    margin-top: 220px;
-    
-    
-}
-.pi1{
-    position: absolute;
-    color:black;
-    font-size:30pt;
-    margin-left: 200px;
-    margin-top: 180px;
-}
-
-.Img_about img{
-    object-fit: fill;
 }
